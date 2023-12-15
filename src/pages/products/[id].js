@@ -188,10 +188,5 @@ export async function getServerSideProps(context) {
   const response = await axios.get(`${domain}/posts/${context.query.id}`);
   return {
     props: { post: response.data },
-    // try {
-    //   }
-
-    // } catch (error) {
-    //   console.log(error);
   };
 }

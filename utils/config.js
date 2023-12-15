@@ -1,8 +1,7 @@
 var domain;
-if(process.env.NODE_ENV==='production'){
-
-}else{
-  domain ='http://localhost:3000/api' 
+if (process.env.NODE_ENV === "production") {
+} else {
+  domain = "http://Mohamed-JsDev.github.io/Next-Dashboard/api";
 }
 
-export default domain
+export default domain;

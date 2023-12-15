@@ -2,7 +2,7 @@ import domain from "../../../utils/config";
 import dbConnect from "../../../utils/dbConnect";
 import Image from "next/image";
 import axios from "axios";
-import { Alert, Button } from "react-bootstrap";
+import { Button } from "react-bootstrap";
 import { useRouter } from "next/router";
 import style from "../../styles/products.module.css";
 import Head from "next/head";
@@ -106,6 +106,6 @@ export default function Post({ data }) {
 export async function getStaticProps() {
   const response = await axios.get(`${domain}/posts`);
   return {
-    props: { data: response.data },
+    props: { data: response.data, fallback: false },
   };
 }
