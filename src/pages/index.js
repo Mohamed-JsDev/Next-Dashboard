@@ -10,7 +10,7 @@ import {
 } from "react-icons/fc";
 import { MdProductionQuantityLimits } from "react-icons/md";
 import ReactEcharts from "echarts-for-react";
-import { option } from "./components/echarts";
+import { option } from "../../echarts";
 export default function Home() {
   const { theme, setTheme } = useTheme();
   return (
