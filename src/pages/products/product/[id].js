@@ -42,6 +42,7 @@ export default function Id({ product }) {
           <h6 className="p-2">{product.title}</h6>
           <p>{product.description}</p>
           <p> price : {product.price} $</p>
+          <p> {product.details} </p>
           {product.rating ? (
             <div className="d-flex text-center">
               <p> count : {product.rating.count} </p>

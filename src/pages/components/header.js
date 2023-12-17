@@ -1,6 +1,6 @@
 import Image from "next/image";
 import style from "./style/header.module.css";
-import face from "../public/face.jpg";
+import face from "../../../public/face.jpg";
 import Links from "./links";
 
 import { useState } from "react";
@@ -245,10 +245,3 @@ export default function Header() {
     </>
   );
 }
-// export async function  getStaticProps () {
-//   const response = await axios.get('https://fakestoreapi.com/users')
-//   return {
-//     props :{users : response.data },
-//       }
-
-//     }
