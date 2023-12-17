@@ -1,9 +1,8 @@
 import post from "../../../../models/post";
-import dbConnect from "../../../../utils/dbConnect";
+import dbConnect from "../../utils/dbConnect";
 import { createRouter } from "next-connect";
 
 dbConnect();
-
 
 const router = createRouter();
 router

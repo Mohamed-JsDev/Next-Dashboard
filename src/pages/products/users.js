@@ -1,5 +1,4 @@
 import axios from "axios";
-// import { UseTheme } from "next-themes";
 import { useTheme } from "next-themes";
 import Head from "next/head";
 export default function Users({ data }) {
@@ -44,24 +43,6 @@ export default function Users({ data }) {
     </div>
   );
 }
-// <tr>
-// <th scope="row">1</th>
-// <td>Mark</td>
-// <td>Otto</td>
-// <td>@mdo</td>
-// </tr>
-// <tr>
-// <th scope="row">2</th>
-// <td>Jacob</td>
-// <td>Thornton</td>
-// <td>@fat</td>
-// </tr>
-// <tr>
-// <th scope="row">3</th>
-// <td>Larry</td>
-// <td>the Bird</td>
-// <td>@twitter</td>
-// </tr>
 export async function getStaticProps() {
   const response = await axios.get(`https://fakestoreapi.com/users`);
   return {

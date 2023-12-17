@@ -4,7 +4,7 @@ import face from "../public/face.jpg";
 import Links from "./links";
 
 import { useState } from "react";
-import { users } from "../data";
+import { users } from "../../../data";
 import { AiFillCloseCircle } from "react-icons/ai";
 import { IoIosNotificationsOutline } from "react-icons/io";
 import { CiLight, CiDark } from "react-icons/ci";

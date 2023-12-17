@@ -1,4 +1,4 @@
-import Head from 'next/head';
+import Head from "next/head";
 import { useTheme } from "next-themes";
 import photo from "/public/undraw_online_transactions_02ka.png";
 import Image from "next/image";
@@ -10,31 +10,34 @@ import {
 } from "react-icons/fc";
 import { MdProductionQuantityLimits } from "react-icons/md";
 import ReactEcharts from "echarts-for-react";
-
-import { option } from "../../components/echarts";
+import { option } from "./components/echarts";
 export default function Home() {
-  const{theme,setTheme}=useTheme();
+  const { theme, setTheme } = useTheme();
   return (
     <>
-    <Head>
-    <title>
-      NEXT-DASHBOARD
-    </title>
-    <meta
-      name="dashboard to your website and e-commerce  "
-      content="A dashboard to check your products, know your sales, and know the results of your website and e-commerce"
-      key="dashboard"
-    />
-    <meta
-      name="website dashboard"
-      content="your website and e-commerce "
-      key="e-commerce dashboard"
-    />
-  </Head>
+      <Head>
+        <title>NEXT-DASHBOARD</title>
+        <meta
+          name="dashboard to your website and e-commerce  "
+          content="A dashboard to check your products, know your sales, and know the results of your website and e-commerce"
+          key="dashboard"
+        />
+        <meta
+          name="website dashboard"
+          content="your website and e-commerce "
+          key="e-commerce dashboard"
+        />
+      </Head>
       <div className={style.home}>
         <div className="container">
           <div className={style.face}>
-            <Image src={photo} className={style.Image} alt="mohamed" width={200} height={50} />
+            <Image
+              src={photo}
+              className={style.Image}
+              alt="mohamed"
+              width={200}
+              height={50}
+            />
             <div>
               <div className={style.earning}>
                 <span>Earning</span>
@@ -80,7 +83,6 @@ export default function Home() {
                 <FcSynchronize />
               </span>
               <p>
-                
                 24,04<span style={{ color: "red" }}>-17%</span>
               </p>
               <span>Refunds</span>
@@ -88,7 +90,10 @@ export default function Home() {
           </div>
 
           <div className={style.map}>
-            <ReactEcharts option={option} theme={(theme == "dark")?"dark" : "light"} />
+            <ReactEcharts
+              option={option}
+              theme={theme == "dark" ? "dark" : "light"}
+            />
           </div>
         </div>
       </div>
