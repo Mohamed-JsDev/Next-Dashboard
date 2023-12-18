@@ -1,6 +1,6 @@
 let domain;
 if (process.env.NODE_ENV === "production") {
-  domain = process.env.VERCEL_URL + "/api";
+  domain = "next-dashboard-ebon-ten.vercel.app/api";
 } else {
   domain = "http://localhost:3000/api";
 }
