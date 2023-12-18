@@ -1,4 +1,4 @@
-const option = {
+export const option = {
   darkMode: true,
   title: {
     text: "Stacked Line",
@@ -62,4 +62,4 @@ const option = {
   ],
 };
 
-export default option;
+// export default option;
