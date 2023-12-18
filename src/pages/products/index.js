@@ -1,11 +1,11 @@
-import domain from "../components/utils/config";
-import dbConnect from "../components/utils/dbConnect";
-import Image from "next/image";
 import axios from "axios";
-import { Button } from "react-bootstrap";
-import { useRouter } from "next/router";
-import style from "../../styles/products.module.css";
+import Image from "next/image";
 import Head from "next/head";
+import { useRouter } from "next/router";
+import { Button } from "react-bootstrap";
+import domain from "../../../utils/config.page";
+import dbConnect from "../../../utils/dbConnect";
+import style from "../../styles/products.module.css";
 
 dbConnect();
 export default function Post({ data }) {

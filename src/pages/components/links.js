@@ -20,7 +20,7 @@ export default function Links({ posts }) {
         <span></span>
       </div>
       <div className={open ? style.show : style.hide}>
-        <h2>Dashboard </h2>
+        <h4>Dashboard </h4>
         <span>Websites</span>
         <Link href="/" className={style.link}>
           E-commerce

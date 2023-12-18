@@ -1,4 +1,5 @@
-let domain;
+function config() {}
+var domain;
 if (process.env.NODE_ENV === "production") {
   domain = "next-dashboard-ebon-ten.vercel.app/api";
 } else {
