@@ -2,7 +2,6 @@ import { useState } from "react";
 import domain from "../../utils/config";
 import axios from "axios";
 import dbConnect from "../../utils/dbConnect";
-import style from "../../styles/products.module.css";
 import Head from "next/head";
 dbConnect();
 
