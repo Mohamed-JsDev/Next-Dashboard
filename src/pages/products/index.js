@@ -1,5 +1,5 @@
-import domain from "../../utils/config";
-import dbConnect from "../../utils/dbConnect";
+import domain from "../components/utils/config";
+import dbConnect from "../components/utils/dbConnect";
 import Image from "next/image";
 import axios from "axios";
 import { Button } from "react-bootstrap";

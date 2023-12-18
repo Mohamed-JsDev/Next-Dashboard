@@ -1,5 +1,5 @@
 import post from "../../../../models/post";
-import dbConnect from "../../../utils/dbConnect";
+import dbConnect from "../../components/utils/dbConnect";
 import { createRouter } from "next-connect";
 
 dbConnect();
